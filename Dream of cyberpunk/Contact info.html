@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset = 'UTF-8'>
+        <title>Contact Info</title>
+        <link rel='stylesheet' href='css/style.css'>
+    </head>
+
+    <body>
+        <header>
+            <a id ='logo' href='Welcome Page.html'>
+            </a>
+
+            <nav>
+                <ul class='main-menu'>
+                    <li>
+                        <a href='our-value.html'>ABOUT US</a>
+                    </li>
+                    <li>
+                        <a href='Menu info.html'>MENU</a>
+                    </li>
+                    <li>
+                        <a href='Contact info.html'>CONTACT</a>
+                    </li>
+                    <li class='log-in'>
+                        <a href = '#'>REGISTER</a>
+                    </li>
+                    <li>
+                        <a href = 'Cyborg.html'>SERVICE</a>
+                    </li>
+                    <li>
+                        <a href = 'our-value.html'>SOCIAL</a>
+                    </li>
+                </ul>
+                <div id='functional'>
+                    <a href='Menu info.html'>
+                        <!--https://pixabay.com/illustrations/shopping-cart-cart-cart-transparent-1371193/-->
+                        <img src='images/shopping-cart.png' alt='shopping-cart'>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <!--learnt from w3school, https://www.w3schools.com/howto/howto_js_collapse_sidepanel.asp-->
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="our-value.html">ABOUT US</a>
+            <a href="Menu info.html">MENU</a>
+            <a href="Contact info.html">CONTACT</a>
+            <div class='log-in'>
+                <a href="#">REGISTER</a>
+            </div>
+            <a href='Cyborg.html'>SERVICE</a>
+            <a href='our-value.html'>SOCIAL</a>
+        </div>
+                
+        <button class="openbtn" onclick="openNav()">☰</button> 
+
+        <script>
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "30vw";
+        }
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
+
+        <section class='background'>
+            <section class='contact-us'>
+                <article class='banner'>
+                    <figure id='icon'>
+                        <a href='Samurai Sushi.html'>
+                            <!--edit by online editor https://www.freelogodesign.org/-->
+                            <img src='images/icon.png' alt='icon'>
+                        </a>
+                    </figure>
+                    <h1>May I help you</h1>
+                </article>
+                
+                <nav class='cta-button'>
+                    <ul>
+                        <li>
+                            <a href='Menu info.html'>ORDER DELIVER</a>
+                        </li>
+                        <li>
+                            <a href='#contact-form'>MAKE RESERVATION</a>
+                        </li>
+                        <li>
+                            <a href='#contact-form'>RESERVE FOR ACTIVITY</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class='activity'>
+
+                <article class='dine-in'>
+                    <h2>Dine-in the most fancy food ever</h2>
+                </article>
+
+                <article class='delivery'>
+                    <h2>Deliver wherever you are</h2>
+                </article>
+            </section>
+
+            <section class='form-title'>
+                <article>
+                    <h1>Sushi Never Disappoint you</h1>
+                </article>
+
+                    
+                <section class='contact-form' id='contact-form'>
+                    <h2>Contact Us</h2>
+
+                    <form method='get' action='Contact info.html'>
+
+                        <fieldset>
+                            <legend>
+                                YOUR DETAILS
+                            </legend>
+
+                            <div class='form-item'>
+                                <label for='form-full-name'>Name:</label>
+                                <div class='form-element'>
+                                    <input type='text' name='full_name' id='form-full-name' placeholder='First and last names'>
+                                </div>
+                            </div>
+
+                            <div class='form-item'>
+                                <label for='form-state'>Suburb:</label>
+                                <div class='form-element'>
+                                    <select name='form-state'>
+                                        <option>Little Italy</option>
+                                        <option>China Town</option>
+                                        <option>Punk Hill</option>
+                                        <option>Night University</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-item">
+                                <label for="form-postcode">Postcode:</label>
+                                <div class="form-element">
+                                    <input type="text" name="postcode" id="form-postcode" placeholder="4 number postcode" />
+                                </div>
+                            </div>
+        
+                            <div class="form-item">
+                                <label for="form-phone">Phone:</label>
+                                <div class="form-element">
+                                    <input type="text" name="phone" id="form-phone" placeholder="Phone number including area code" />
+                                </div>
+                            </div>
+        
+                            <div class="form-item">
+                                <label for="form-email">Email:</label>
+                                <div class="form-element">
+                                    <input type="text" name="email" id="form-email" placeholder="Must be a valid email address" />
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <button type='submit'>Submit</button>
+                        </fieldset>
+                    </form>
+                </section>
+            </section>    
+            
+            <footer>
+                <figure id='footer-logo'>
+                    <img>
+                </figure>
+
+                <nav>
+                    <ul class='footer-nav'>
+                        <li>
+                            <a href='https://en.wikipedia.org/wiki/Sushi'>WHAT IS SUSHI?</a>
+                        </li>
+                        <li>
+                            <a href='our-value.html'>THE TEAM</a>
+                        </li>
+                        <li>
+                            <a href='Menu info.html'>MENU</a>
+                        </li>
+                        <li>
+                            <a href='#contact-form'>CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+        </section>
+        <script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset = 'UTF-8'>
+        <title>cyborg-service</title>
+        <link rel='stylesheet' href='css/style.css'>
+    </head>
+
+    <body class='cyborg'>
+        <header>
+            <a id ='logo' href='Welcome Page.html'>
+            </a>
+
+            <nav>
+                <ul class='main-menu'>
+                    <li>
+                        <a href='our-value.html'>ABOUT US</a>
+                    </li>
+                    <li>
+                        <a href='Menu info.html'>MENU</a>
+                    </li>
+                    <li>
+                        <a href='Contact info.html'>CONTACT</a>
+                    </li>
+                    <li class='log-in'>
+                        <a href = '#'>REGISTER</a>
+                    </li>
+                    <li>
+                        <a href = 'Cyborg.html'>SERVICE</a>
+                    </li>
+                    <li>
+                        <a href = 'our-value.html'>SOCIAL</a>
+                    </li>
+                </ul>
+                <div id='functional'>
+                    <a href='Menu info.html'>
+                        <!--https://pixabay.com/illustrations/shopping-cart-cart-cart-transparent-1371193/-->
+                        <img src='images/shopping-cart.png' alt='shopping-cart'>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <!--learnt from w3school, https://www.w3schools.com/howto/howto_js_collapse_sidepanel.asp-->
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="our-value.html">ABOUT US</a>
+            <a href="Menu info.html">MENU</a>
+            <a href="Contact info.html">CONTACT</a>
+            <div class='log-in'>
+                <a href="#">REGISTER</a>
+            </div>
+            <a href='Cyborg.html'>SERVICE</a>
+            <a href='our-value.html'>SOCIAL</a>
+        </div>
+                
+        <button class="openbtn" onclick="openNav()">☰</button> 
+
+        <script>
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "30vw";
+        }
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
+
+        <section class='background'>
+            <section class='cyborg-service'>
+                <article class='banner'>
+                    <div id='cover'>
+                        <figure id='icon'>
+                            <a href='Samurai Sushi.html'>
+                                <!--edit by online editor https://www.freelogodesign.org/-->
+                                <img src='images/icon.png' alt='icon'>
+                            </a>
+                        </figure>
+                        <h1>Need maintainence? I got it!</h1>
+                    </div>
+                </article>
+                
+                <nav class='cta-button'>
+                    <ul>
+                        <li>
+                            <a href='#footer-logo'>CHANGE OIL</a>
+                        </li>
+                        <li>
+                            <a href='#footer-logo'>PROSTHESIS REPLACEMENT</a>
+                        </li>
+                        <li>
+                            <a href='#footer-logo'>BATTERY RECHARGE</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class='activity'>
+
+                <article class='dine-in'>
+                    <h2>Best Mech in Town</h2>
+                </article>
+
+                <article class='delivery'>
+                    <h2>Best core For Free</h2>
+                </article>
+            </section>
+
+            <section class='form-title'>
+                <section class='cta-button'>
+                    <a href='Samurai Sushi.html'>Contact Us</a>
+                </section>
+            </section>    
+            
+            <footer>
+                <figure id='footer-logo'>
+                    <img>
+                </figure>
+
+                <nav>
+                    <ul class='footer-nav'>
+                        <li>
+                            <a href='https://en.wikipedia.org/wiki/Sushi'>WHAT IS SUSHI?</a>
+                        </li>
+                        <li>
+                            <a href='our-value.html'>THE TEAM</a>
+                        </li>
+                        <li>
+                            <a href='Menu info.html'>MENU</a>
+                        </li>
+                        <li>
+                            <a href='Cyborg.html'>SERVICE</a>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+        </section>
+        <script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/script.js"></script>
+    </body>
+</html>

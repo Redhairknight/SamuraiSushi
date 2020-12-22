@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset = 'UTF-8'>
+        <title>Menu Info</title>
+        <link rel='stylesheet' href='css/style.css'>
+    </head>
+
+    <body>
+        <header>
+            <a id ='logo' href='Welcome Page.html'>
+            </a>
+
+            <nav>
+                <ul class='main-menu'>
+                    <li>
+                        <a href='our-value.html'>ABOUT US</a>
+                    </li>
+                    <li>
+                        <a href='Menu info.html'>MENU</a>
+                    </li>
+                    <li>
+                        <a href='Contact info.html'>CONTACT</a>
+                    </li>
+                    <li class='log-in'>
+                        <a href = '#'>REGISTER</a>
+                    </li>
+                    <li>
+                        <a href = 'Cyborg.html'>SERVICE</a>
+                    </li>
+                    <li>
+                        <a href = 'our-value.html'>SOCIAL</a>
+                    </li>
+                </ul>
+                <div id='functional'>
+                    <a href='Menu info.html'>
+                        <!--https://pixabay.com/illustrations/shopping-cart-cart-cart-transparent-1371193/-->
+                        <img src='images/shopping-cart.png' alt='shopping-cart'>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <!--learnt from w3school, https://www.w3schools.com/howto/howto_js_collapse_sidepanel.asp-->
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="our-value.html">ABOUT US</a>
+            <a href="Menu info.html">MENU</a>
+            <a href="Contact info.html">CONTACT</a>
+            <div class='log-in'>
+                <a href="#">REGISTER</a>
+            </div>
+            <a href='Cyborg.html'>SERVICE</a>
+            <a href='our-value.html'>SOCIAL</a>
+        </div>
+                
+        <button class="openbtn" onclick="openNav()">☰</button> 
+
+        <script>
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "30vw";
+        }
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
+
+        <section class='background'>
+            <section class='menu-info'>
+                <article class='banner'>
+                    <figure id='icon'>
+                        <a href='Samurai Sushi.html'>
+                            <!--edit by online editor https://www.freelogodesign.org/-->
+                            <img src='images/icon.png' alt='icon'>
+                        </a>
+                    </figure>
+                    <h1>MENU</h1>
+                </article>
+
+                <nav class='cta-button'>
+                    <a href='Contact info.html'>Contact Us</a>
+                </nav>
+            </section>
+
+            <section class='maki-zushi'>
+                <div class='description'>
+                    <h3>MAKI-ZUSHI</h3>
+                    <p>Makizushi can be filled with a variety of ingredients, including fresh vegetables, for cyborg can be gas or battery if you want.</p>
+                    <p class='price'>$19.99</p> 
+                </div>
+                <nav class='cta-button'>
+                    <a href='#'>Add to Cart</a>
+                </nav>
+            </section>
+
+            <div id='m-popup'>
+                <section class='m-list'>
+                    <nav class='close-button'>
+                        <a href='Menu info.html'>Close</a>
+                    </nav>
+                    <div class='description'>
+                        <h3>MAKI-ZUSHI</h3>
+                        <p>Makizushi can be filled with a variety of ingredients, including fresh vegetables, for cyborg can be gas or battery if you want.</p>
+                        <p class='price'>$19.99</p> 
+                    </div>
+                </section>
+            </div>
+
+            <section class='nigiri-zushi'>
+                <nav class='cta-button'>
+                    <a href='#'>Add to Cart</a>
+                </nav>
+                <div class='description'>
+                    <h3>NIGIRI-ZUSHI</h3>
+                    <p>Nigirizushi involves a slice of raw fish at top, compacted mound of rice. Unfortunately mate, this is food only for mankind.</p>
+                    <p class='price'>$29.99</p>
+                </div>
+            </section>
+
+            <div id='n-popup'>
+                <section class='n-list'>
+                    <nav class='close-button'>
+                        <a href='Menu info.html'>Close</a>
+                    </nav>
+                    <div class='description'>
+                        <h3>NIGIRI-ZUSHI</h3>
+                        <p>Nigirizushi involves a slice of raw fish at top, compacted mound of rice. Unfortunately mate, this is food only for mankind.</p>
+                        <p class='price'>$29.99</p>
+                    </div>
+                </section>
+            </div>
+
+            <section class='tempura'>
+                <div class='description'>
+                    <h3>TEMPURA</h3>
+                    <p>Tempura are pieces of lightly battered food fried by gas, only offer to our cyborg friend.</p>
+                    <p class='price'>$9.99</p>
+                </div>
+                <nav class='cta-button'>
+                    <a href='#'>Add to Cart</a>
+                </nav>
+            </section>
+
+            <div id='t-popup'>
+                <section class='t-list'>
+                    <nav class='close-button'>
+                        <a href='Menu info.html'>Close</a>
+                    </nav>
+                    <div class='description'>
+                        <h3>TEMPURA</h3>
+                        <p>Tempura are pieces of lightly battered food fried by gas, only offer to our cyborg friend.</p>
+                        <p class='price'>$9.99</p>
+                    </div>
+                </section>
+            </div>
+
+            <footer>
+                <figure id='footer-logo'>
+                    <img>
+                </figure>
+
+                <nav>
+                    <ul class='footer-nav'>
+                        <li>
+                            <a href='https://en.wikipedia.org/wiki/Sushi'>WHAT IS SUSHI?</a>
+                        </li>
+                        <li>
+                            <a href='our-value.html'>THE TEAM</a>
+                        </li>
+                        <li>
+                            <a href='Menu info.html'>MENU</a>
+                        </li>
+                        <li>
+                            <a href='Cyborg.html'>SERVICE</a>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+        </section>
+        <script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/script.js"></script>
+    </body>
+</html>

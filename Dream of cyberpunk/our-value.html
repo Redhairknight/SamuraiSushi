@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset = 'UTF-8'>
+        <title>Our value</title>
+        <link rel='stylesheet' href='css/style.css'>
+    </head>
+
+    <body class='our-value'> 
+        <header>
+            
+            <a id ='logo' href='Welcome Page.html'>
+            </a>
+
+            <nav>
+                <ul class='main-menu'>
+                    <li>
+                        <a href='our-value.html'>ABOUT US</a>
+                    </li>
+                    <li>
+                        <a href='Menu info.html'>MENU</a>
+                    </li>
+                    <li>
+                        <a href='Contact info.html'>CONTACT</a>
+                    </li>
+                    <li class='log-in'>
+                        <a href = '#'>REGISTER</a>
+                    </li>
+                    <li>
+                        <a href = 'Cyborg.html'>SERVICE</a>
+                    </li>
+                    <li>
+                        <a href = 'our-value.html'>SOCIAL</a>
+                    </li>
+                </ul>
+                <div id='functional'>
+                    <a href='Menu info.html'>
+                        <!--https://pixabay.com/illustrations/shopping-cart-cart-cart-transparent-1371193/-->
+                        <img src='images/shopping-cart.png' alt='shopping-cart'>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <!--learnt from w3school, https://www.w3schools.com/howto/howto_js_collapse_sidepanel.asp-->
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="our-value.html">ABOUT US</a>
+            <a href="Menu info.html">MENU</a>
+            <a href="Contact info.html">CONTACT</a>
+            <div class='log-in'>
+                <a href="#">REGISTER</a>
+            </div>
+            <a href='Cyborg.html'>SERVICE</a>
+            <a href='#'>SOCIAL</a>
+        </div>
+          
+        <button class="openbtn" onclick="openNav()">☰</button> 
+
+        <script>
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "30vw";
+        }
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
+
+        <section id="podcast">
+            <nav class="player-controls">
+                <!--http://soundbible.com/1661-Sunny-Day.html-->
+                <!--https://pixabay.com/vectors/music-play-pause-icons-next-back-1956799/-->
+                <a id='play' href="sunnyday.mp3"><img src='images/play.png' alt='play'></a>
+                <a id='pause' href="sunnyday.mp3"><img src='images/pause.png' alt='pause'></a>
+            </nav>
+
+            <audio controls>
+                <source src="sunnyday.mp3" alt='sunny-day' type="audio/mp3">
+            </audio>
+
+        </section>
+        
+        <section class='value'>
+            <article class='banner'>
+                <figure id='icon'>
+                    <a href='Samurai Sushi.html'>
+                        <!--edit by online editor https://www.freelogodesign.org/-->
+                        <img src='images/icon.png' alt='icon'>
+                    </a>
+                </figure>
+                <h1>Samurai Sushi</h1>
+
+                <p>Everybody is Welcome.</p>
+
+            </article>
+        </section>
+
+        <section class='our-goal'>
+            <div class='description'>
+                <h3>Our Goal</h3>
+                <blockquote>We don't care about who you are, you got money, we serve you.</blockquote>
+                <p>Our goal is to provide best sushi for everyone who lives in town. No matter what requirements you have, gas sushi? We got that.</p> 
+            </div>
+        </section>
+
+        <section class='our-vision'>
+            <div class='description'>
+                <h3>Our Vision</h3>
+                <p>As the leader of sushi industry in Night City. We are dedicate to union people together by the best food. Every citizen is our valued customer, nobody will be treated unfairly. No matter you are mankind or cyborg.</p>
+            </div>
+        </section>
+
+        <section class='our-mission'>
+            <div class='description'>
+                <h3>Our Mission</h3>
+                <p>To achieve that, our mission is to make you happy. Everyone is welcome here, but don't bother other customer, or our Cthulhu mewmew will hunt you down (*＾-＾*)</p>
+            </div>
+        </section>
+
+        <nav class='cta-button'>
+            <a href='Menu info.html'>ENJOY</a>
+        </nav>
+        
+        <footer>
+            <figure id='footer-logo'>
+                <img>
+            </figure>
+
+            <nav>
+                <ul class='footer-nav'>
+                    <li>
+                        <a href='https://en.wikipedia.org/wiki/Sushi'>WHAT IS SUSHI?</a>
+                    </li>
+                    <li>
+                        <a href='our-value.html'>THE TEAM</a>
+                    </li>
+                    <li>
+                        <a href='Menu info.html'>MENU</a>
+                    </li>
+                    <li>
+                        <a href='Cyborg.html'>SERVICE</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+        <script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/script.js"></script>
+    </body>
